@@ -6,10 +6,31 @@
         <p class="description">Damon Vaughn is a professor of psychology at the University of Toronto, a clinical psychologist and the author of the multi-million copy bestseller 'The story of my life.'</p>
         <button class="custom-button">Meet The Author</button>
       </div>
-     
+     <!------sezzione loghi -->
     </div>
     <div class="section section2">
-      <h1>seconda sezione</h1>
+  <div class="container">
+    <div class="image-container">
+      <a href="#">
+        <img src="/public/ebay-logotan-2x-200x66.png" alt="Immagine 1" />
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="#">
+        <img src="/public/audible-logotan-2x-200x66.png" alt="Immagine 2" />
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="#">
+        <img src="/public/bb-logotan-2x-200x66.png" alt="Immagine 3" />
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="#">
+        <img src="/public/kindlefire-logotan-2x-200x66.png" alt="Immagine 4" />
+      </a>
+    </div>
+  </div>
     </div>
     <div class="section section3">
       <h1>3 sezione</h1>
@@ -75,10 +96,41 @@ font-size: 80px;
 .custom-button:hover {
   background-color: #D89E2B;
 }
-
+/*sezione loghi */
 .section2 {
-  background-color: #b5e7a0; 
+  background-color: #FEF7E9; 
 }
+
+.container{
+  display: flex;
+  justify-content: space-around; 
+ 
+}
+
+.image-container {
+  width: 300px; 
+  height: 100px; 
+  margin: 1px; 
+ 
+ 
+}
+
+.image-container img {
+  width: 100%;
+  height: 60%;
+  object-fit:none;
+ 
+}
+
+
+
+
+
+
+
+
+
+
 
 .section3 {
   background-color: #add8e6; 
