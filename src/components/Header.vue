@@ -1,55 +1,48 @@
 <template>
-   <header>
-    <div class="logo">
-      <img src="/public/author-logo-round.png" alt="Logo Author">
-    </div>
-    <nav class="main-menu">
-      <ul>
-        <li
-          v-for="(item,index) in mainMenu"
-          :key="index"
-        ><a :href="item.href">{{ item.text }}</a></li>
+   <nav class="navbar navbar-expand-lg navbar-light custom-navbar-bg">
+    <router-link class="navbar-brand" to="/">
+      <img src="/public/author-logo-round-200x205.png" alt="Il Tuo Logo" />
+    </router-link>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li v-for="item in navItems" :key="item.name" class="nav-item">
+          <router-link class="nav-link" :to="item.link">{{ item.name }}</router-link>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 </template>
 
 <script>
-import mainMenu from '../data/mainMenu'
-
 export default {
-  name: 'Header',
-  data(){
-    return{
-      mainMenu
-    }
+  name: "NavbarComponent",
+  data() {
+    return {
+      navItems: [
+        { name: "Home", link: "/" },
+        { name: "About Me", link: "/about" },
+        { name: "Testimonials", link: "/testimonials" },
+        { name: "My Blog", link: "/blog" },
+        { name: "Meetups", link: "/meetups" },
+        { name: "Shop", link: "/shop" },
+        { name: "Contact Me", link: "/contact" },
+        { name: "Other", link: "/other" }
+      ]
+    };
   }
-}
+};
 </script>
 
 <style scoped>
-@use 'src/components/scss/_variabiles.scss as *;
+.custom-navbar-bg {
+  background-color:transparent  
+}
 
-header{
-  text-align: center;
-  margin-bottom: 50px;
-  .logo{
-    margin-bottom: 50px;
-  }
-  ul{
-    li{
-      display: inline-block;
-
-      a{
-        color: $link-color;
-        text-transform: capitalize;
-        font-weight: bold;
-        padding: 15px;
-        &:hover{
-          background-color: lighten($primary-color, 65%);
-        }
-      }
-    }
-  }
+.custom-navbar-bg .nav-link {
+  color: black; 
 }
 </style>
