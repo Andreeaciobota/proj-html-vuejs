@@ -31,9 +31,22 @@
       </a>
     </div>
   </div>
+  <!------sezione telefono ------>
     </div>
     <div class="section section3">
-      <h1>3 sezione</h1>
+      <div class="/public/banner.jpg">
+        <div class="container-phone">
+      <div class="image-iphone">
+        <img src="/public/audible-app-2x.png" alt="Immagine" />
+      </div>
+      <!-- Contenitore per il testo -->
+      <div class="testo-container">
+        <h2>Titolo</h2>
+        <p>Testo descrittivo.</p>
+      </div>
+    </div>
+  </div>
+
     </div>
   </div>
 </template>
@@ -135,4 +148,45 @@ font-size: 80px;
 .section3 {
   background-color: #add8e6; 
 }
+.section3 {
+  background-image: url('/public/banner.jpg'); /* Percorso dell'immagine di sfondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white; /* Colore del testo */
+  text-align: center; /* Allineamento del testo al centro */
+  padding: 100px 0; /* Spaziatura interna nella sezione */
+  
+}
+
+.container-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-iphone {
+  width: 300px;
+  height: 347px;
+  margin-right: 300px; /* Spazio tra l'immagine e il testo */
+}
+
+.image-iphone img {
+  width: 439px;
+  height: 526px;
+  object-fit: cover;
+  transform: scale(0.7);
+}
+
+.testo-container {
+  max-width: 400px; /* Larghezza massima del contenitore del testo */
+  text-align: left; /* Allineamento del testo a sinistra */
+}
+
+.testo-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px; /* Spazio tra il titolo e il paragrafo */
+}
+
+
 </style>
