@@ -15,6 +15,10 @@
       </ul>
     </div>
   </nav>
+  <div class="section">
+
+  </div>
+
 </template>
 
 <script>
@@ -44,5 +48,8 @@ export default {
 
 .custom-navbar-bg .nav-link {
   color: black; 
+}
+.section{
+  background-image: url('/public/hero-07-2x.jpg');
 }
 </style>

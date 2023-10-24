@@ -58,39 +58,66 @@
           </div>
         </div>
       </div>
+      
+      
     </div>
   </div>
   </div>
+  
   <div class="section section4">
-    <div class="section section4">
-  <div class="container-left">
-    <div class="content">
-      <h2>Titolo Sinistro</h2>
-      <p>Descrizione sinistra.</p>
+        <div class="custom-container">
+            <h2 class="section-title">Nuova Sezione</h2>
+            <p class="section-description">Questa è una nuova sezione con un titolo e una didascalia personalizzati.</p>
+          </div>
+      </div>
+    <div class="section section5">
+      
+      <div class="content-container">
+        <h1 class="Titolo">Upcoming Event</h1>
+        <p class="sottotitolo">MEET TEH AUTHOR IN PERSON</p>
+        
+        <div class="square-container">
+          <img src="/public/event-05-400x240.jpg" alt="Immagine 1" class="square-image" />
+          <h1 class="Nome">Chicago Book Signing</h1>
+          <p class="square-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, dicta consequatur ut enim officiis aspernatur sint voluptas tenetur!1</p>
+        </div>
+        
+        <!-- Contenitore 2 -->
+        <div class="square-container">
+          <img src="/public/event-04-400x240.jpg" alt="Immagine 2" class="square-image" />
+          <h1 class="Nome">Meet & Greet With Amanda</h1>
+          <p class="square-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, dicta consequatur ut enim officiis aspernatur sint voluptas tenetur!</p>
+        </div>
+        
+        <!-- Contenitore 3 -->
+        <div class="square-container">
+          <img src="/public/event-07-400x240.jpg" alt="Immagine 3" class="square-image" />
+          <h1 class="Nome">Open Book Dialogues</h1>
+          <p class="square-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, dicta consequatur ut enim officiis aspernatur sint voluptas tenetur!</p>
+        </div>
+      </div>
     </div>
-    <button class="button">Pulsante Sinistro</button>
-  </div>
+    <div class="section section6">
+      <div class="content-container">
+        <div class="center-container">
+          <h2 class="section-title">Subscribe To My Newsletter</h2>
+          <h3 class="section-subtitle">BE NOTTIFICATE ABOUT BOOK SINGING TOUR DATES</h3>
+          
+          <!-- Barra di Ricerca e Pulsante -->
+          <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Insert your email..." />
+            <button class="search-button">Subscribe</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section7">
+      <div class="content-container">
+        
+      </div>
+    </div>
   
-  <div class="container-middle">
-    <div class="background-box">
-      <h2>What The Critics Say</h2>
-      <p>TESTIMONIALS FROM AROUND THE WORLD</p>
-    </div>
-  </div>
-  
-  <div class="container-right">
-    <div class="text-box">
-      <p>Testo destro 1.</p>
-    </div>
-    <div class="text-box">
-      <p>Testo destro 2.</p>
-    </div>
-  </div>
-</div>
-
-
-  </div>
-
 </template>
 
 <script>
@@ -176,7 +203,49 @@ font-size: 80px;
   object-fit:none;
  
 }
+.section4 {
+  background-color: #F0E68C; /* Cambia il colore di sfondo come preferisci */
+  color: #333; /* Cambia il colore del testo se necessario */
+  text-align: center;
+  padding: 100px 0;
+}
+.custom-container {
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin-top: 40px;
+  margin-right: 200px;
+}
 
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #777;
+}
+
+.section5 {
+  background-color: #F4B429; 
+  color: #333; 
+  text-align: center;
+  padding: 100px 0;
+}
+.section6 {
+  background-color: #F0E68C; /* Cambia il colore di sfondo come preferisci */
+  color: #333; /* Cambia il colore del testo se necessario */
+  text-align: center;
+  padding: 50px 0;
+}
+.section7 {
+  background-color: #94f08c; /* Cambia il colore di sfondo come preferisci */
+  color: #333; /* Cambia il colore del testo se necessario */
+  text-align: center;
+  padding: 100px 0;
+}
 
 
 
@@ -191,13 +260,13 @@ font-size: 80px;
   background-color: #add8e6; 
 }
 .section3 {
-  background-image: url('/public/banner.jpg'); /* Percorso dell'immagine di sfondo */
+  background-image: url('/public/banner.jpg');  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: white; /* Colore del testo */
-  text-align: center; /* Allineamento del testo al centro */
-  padding: 100px 0; /* Spaziatura interna nella sezione */
+  color: white;
+  text-align: center; 
+  padding: 100px 0; 
   
 }
 
@@ -259,4 +328,107 @@ font-size: 80px;
   object-fit: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*sezzione 5 */
+.section5 {
+  background-color: #FEF7E9; /* Cambia il colore di sfondo come preferisci */
+  color: #333; /* Cambia il colore del testo se necessario */
+  text-align: center;
+  padding: 200px 0;
+}
+
+/* Stili per i contenitori quadrati */
+.square-container {
+  width: 260px;
+  height: 360px;
+  background-color: #fff;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.square-image {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.square-text {
+  font-size: 16px;
+  margin-top: 10px;}
+
+
+.Nome {
+  font-size: 15px;
+}
+.sottotitolo {
+  color: #F4B429;
+}
+
+
+/*sezione 6 */
+.section6 {
+  background-image: url('/public/banner-2.jpg'); 
+  color: #333;
+  text-align: center;
+  padding: 30px 0;
+  background-repeat: no-repeat;
+}
+
+.center-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+.section-subtitle {
+  font-size: 18px;
+  color: #D89E2B;
+  margin-bottom: 30px;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+ 
+}
+.search-button {
+  background-color: #49A987;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius:  5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.search-button:hover {
+  background-color: #49A987;
+}
 </style>
