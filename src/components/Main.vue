@@ -63,13 +63,6 @@
     </div>
   </div>
   </div>
-  
-  <div class="section section4">
-        <div class="custom-container">
-            <h2 class="section-title">Nuova Sezione</h2>
-            <p class="section-description">Questa è una nuova sezione con un titolo e una didascalia personalizzati.</p>
-          </div>
-      </div>
     <div class="section section5">
       
       <div class="content-container">
@@ -114,9 +107,37 @@
     </div>
     <div class="section section7">
       <div class="content-container">
-        
+        <!-- Contenitore Immagini 1 -->
+        <div class="image-container">
+          <img src="/public/box-1.jpg" alt="Immagine 1" class="content-image" />
+          <div class="content-details">
+            <h3 class="image-title">About Me</h3>
+            <p class="image-description">Lorem ipsum dolor sit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contenitore Immagini 2 -->
+        <div class="image-container">
+          <img src="/public/box-3.jpg" alt="Immagine 2" class="content-image" />
+          <div class="content-details">
+            <h3 class="image-title">My Latest Book</h3>
+            <p class="image-description">Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+
+        <!-- Contenitore Immagini 3 -->
+        <div class="image-container">
+          <img src="/public/box-4.jpg" alt="Immagine 3" class="content-image" />
+          <div class="content-details">
+            <h3 class="image-title">Book Signing</h3>
+            <p class="image-description">Lorem ipsum dolor sit.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+    
   
 </template>
 
@@ -141,6 +162,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .title {
   color: #F4B429;
@@ -204,8 +226,8 @@ font-size: 80px;
  
 }
 .section4 {
-  background-color: #F0E68C; /* Cambia il colore di sfondo come preferisci */
-  color: #333; /* Cambia il colore del testo se necessario */
+  background-color: #F0E68C; 
+  color: #333;
   text-align: center;
   padding: 100px 0;
 }
@@ -234,15 +256,9 @@ font-size: 80px;
   text-align: center;
   padding: 100px 0;
 }
-.section6 {
-  background-color: #F0E68C; /* Cambia il colore di sfondo come preferisci */
-  color: #333; /* Cambia il colore del testo se necessario */
-  text-align: center;
-  padding: 50px 0;
-}
 .section7 {
-  background-color: #94f08c; /* Cambia il colore di sfondo come preferisci */
-  color: #333; /* Cambia il colore del testo se necessario */
+  background-color: #e4e7e4; 
+  color: #333; 
   text-align: center;
   padding: 100px 0;
 }
@@ -279,7 +295,7 @@ font-size: 80px;
 .image-iphone {
   width: 300px;
   height: 347px;
-  margin-right: 300px; /* Spazio tra l'immagine e il testo */
+  margin-right: 300px; 
 }
 
 .image-iphone img {
@@ -290,14 +306,14 @@ font-size: 80px;
 }
 
 .testo-container {
-  max-width: 400px; /* Larghezza massima del contenitore del testo */
-  text-align: left; /* Allineamento del testo a sinistra */
+  max-width: 400px; 
+  text-align: left; 
 }
 
 .testo-container h2 {
   font-size: 30px;
   margin-bottom: 10px;
-  text-align: center; /* Spazio tra il titolo e il paragrafo */
+  text-align: center; 
 }
 .testo-container p {
   font-size: 15px;
@@ -319,7 +335,7 @@ font-size: 80px;
 .immagine {
   width: 20px;
   height: 20px;
-  margin: 0 10px; /* Aggiungi margine tra le immagini */
+  margin: 0 10px; 
 }
 
 .immagine img {
@@ -342,8 +358,8 @@ font-size: 80px;
 
 /*sezzione 5 */
 .section5 {
-  background-color: #FEF7E9; /* Cambia il colore di sfondo come preferisci */
-  color: #333; /* Cambia il colore del testo se necessario */
+  background-color: #FEF7E9; 
+  color: #333; 
   text-align: center;
   padding: 200px 0;
 }
@@ -431,4 +447,35 @@ font-size: 80px;
 .search-button:hover {
   background-color: #49A987;
 }
+
+
+/*sezione 7*/
+.image-container {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-image {
+  width: 200%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.content-details {
+  padding: 10px;
+}
+
+.image-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.image-description {
+  font-size: 14px;
+  color: #D89E2B;
+}
+
 </style>
